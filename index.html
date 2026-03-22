@@ -84,6 +84,22 @@
     </style>
 </head>
 <body>
+    <script>
+    // كلمة السر التي تختارها
+    const password = "BIOT_2026"; 
+    
+    // طلب كلمة السر من المستخدم بمجرد دخول الصفحة
+    let entry = prompt("الرجاء إدخال كلمة السر للدخول إلى نظام Biot Clinic:");
+
+    if (entry === password) {
+        alert("أهلاً بك! تم التحقق بنجاح.");
+    } else {
+        alert("كلمة السر خاطئة! سيتم إغلاق الصفحة.");
+        // إعادة توجيه لصفحة غوغل في حال الخطأ
+        window.location.href = "https://google.com";
+    }
+</script>
+
 
     <header>
         <!-- استبدل logo.png باسم ملف اللوغو عندك -->
